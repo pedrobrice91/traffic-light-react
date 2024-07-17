@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useState } from "react";
 
 function App() {
+const [colors, setColors ] = useState('') 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div id="trafficTop">
+        <img src="traffic-light-solid-icon.jpg" />
+      </div>
+      <div id="container">
+        <div id="light-red">
+          <img className={colors === 'red' ? 'light-red-selected' : 'light-red'} onClick={() => colors === 'red' ? setColors('') : setColors('red')}
+           src="trafficlight-red.png" alt=""/>
+        </div>
+        <div id="light-green">
+          <img className={colors === 'green' ? 'light-green-selected' : 'light-green'} onClick={() => colors === 'green' ? setColors('') : setColors('green')}
+          src="trafficlight-green.png" alt="" />
+        </div>
+        <div id="light-yellow">
+        <img className={colors === 'yellow' ? 'light-yellow-selected' : 'light-yellow'} onClick={() => colors === 'yellow' ? setColors('') : setColors('yellow')}
+          src="trafficlight-yellow.png" alt="" />
+        </div>
+      </div>
     </div>
   );
 }
