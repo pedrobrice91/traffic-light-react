@@ -4,11 +4,11 @@ import { useState } from "react";
 function App() {
 const [colors, setColors ] = useState('') 
   return (
-    <div>
+    <div className= "containter">
       <div id="trafficTop">
         <img src="traffic-light-solid-icon.jpg" />
       </div>
-      <div id="container">
+      <div>
         <div id="light-red">
           <img className={colors === 'red' ? 'light-red-selected' : 'light-red'} onClick={() => colors === 'red' ? setColors('') : setColors('red')}
            src="trafficlight-red.png" alt=""/>

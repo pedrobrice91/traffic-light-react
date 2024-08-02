@@ -1,3 +1,6 @@
+.containter {
+  position: fixed;
+}
 .App {
   text-align: center;
 }
@@ -11,39 +14,39 @@ img{
   width: 106px;
   margin: 0;
   margin-top: -272px;
-  margin-left: 667px;
+  margin-left: 297px;
 }
 .light-red-selected{
   width: 106px;
   margin: 0;
   margin-top: -272px;
-  margin-left: 667px;
+  margin-left: 297px;
   filter: drop-shadow(0px 0px 22px red)
 }
 .light-yellow{
   width: 113px;
   margin: 0;
   margin-top: 21px;
-  margin-left: 663px;
+  margin-left: 294px;
 }
 .light-yellow-selected{
   width: 113px;
   margin: 0;
   margin-top: 21px;
-  margin-left: 663px;
+  margin-left: 294px;
   filter: drop-shadow(0px 0px 22px orange)
 }
 .light-green{
   width: 106px;
   margin: 0;
   margin-top: -368px;
-  margin-left: 667px;
+  margin-left: 297px;
 }
 .light-green-selected{
   width: 106px;
   margin: 0;
   margin-top: -368px;
-  margin-left: 667px;
+  margin-left: 297px;
   filter: drop-shadow(0px 0px 22px green)
 }
 .App-logo {
